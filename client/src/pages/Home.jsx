@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import GetInTouch from "../components/GetInTouch";
 
 const Home = () => {
@@ -73,20 +74,20 @@ const Home = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="#appointment"
+                <Link
+                  to="#appointment"
                   className="inline-flex items-center justify-center space-x-3 bg-white text-[#1f4a50] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <i className="ri-service-fill text-xl mr-2"></i>
                   Explore Services
-                </a>
-                <a
-                  href=""
+                </Link>
+                <Link
+                  to=""
                   className="inline-flex items-center justify-center space-x-3 border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#1f4a50] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <i className="ri-nurse-fill text-xl mr-2"></i>
                   Know Healhy Legs
-                </a>
+                </Link>
               </div>
             </div>
 
