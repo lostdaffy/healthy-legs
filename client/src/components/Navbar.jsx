@@ -10,7 +10,6 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", to: "/home", icon: "ri-home-4-line" },
     { name: "Services", to: "/services", icon: "ri-phone-line" },
-    { name: "Departments", to: "/departments", icon: "ri-phone-line" },
     { name: "About Us", to: "/about", icon: "ri-information-line" },
     { name: "Contact", to: "/contact", icon: "ri-phone-line" },
   ];
@@ -79,11 +78,13 @@ const Navbar = () => {
             {/* Enhanced Logo */}
             <div className="flex items-center space-x-4">
               <div className="relative">
+                <Link to="/">
                 <img
                   src="/images/logo.jpeg"
                   className="w-25"
                   alt="Healthy Legs Logo"
                 />
+                </Link>
               </div>
             </div>
 

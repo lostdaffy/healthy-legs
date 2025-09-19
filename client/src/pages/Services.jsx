@@ -1,6 +1,7 @@
 import React from "react";
 import GetInTouch from "../components/GetInTouch";
 import PageHero from "../components/PageHero";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
@@ -159,8 +160,6 @@ const Services = () => {
                 key={service.id}
                 className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group"
               >
-               
-
                 <div className="p-8">
                   {/* Icon and Title */}
                   <div className="flex items-center mb-6">
@@ -178,8 +177,6 @@ const Services = () => {
                   <p className="text-gray-600 leading-relaxed mb-6">
                     {service.description}
                   </p>
-
-            
 
                   {/* Features List */}
                   <div className="mb-6">
@@ -200,12 +197,12 @@ const Services = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <a
-                    href="#appointment"
+                  <Link
+                    to="/contact"
                     className="w-full bg-[#1f4a50] hover:bg-[#2a5a65] text-white py-3 px-6 rounded-lg font-semibold text-center transition-all duration-300 inline-block group-hover:transform group-hover:scale-105"
                   >
                     Book Appointment
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}

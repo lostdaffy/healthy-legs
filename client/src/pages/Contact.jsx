@@ -55,12 +55,12 @@ const Contact = () => {
                       Call Us
                     </h3>
                     <p className="text-gray-600">
-                      <a
-                        href="tel:+919970787600"
+                      <Link
+                        to="tel:+919970787600"
                         className="hover:text-[#1f4a50] transition-colors"
                       >
                         +91 997-078-7600
-                      </a>
+                      </Link>
                     </p>
                     <p className="text-sm text-gray-500 mt-1">
                       24/7 Emergency Available
@@ -78,12 +78,12 @@ const Contact = () => {
                       Email Us
                     </h3>
                     <p className="text-gray-600">
-                      <a
-                        href="mailto:abhi9kesarwani@gmail.com"
+                      <Link
+                        to="mailto:abhi9kesarwani@gmail.com"
                         className="hover:text-[#1f4a50] transition-colors"
                       >
                         abhi9kesarwani@gmail.com
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </div>
@@ -135,15 +135,15 @@ const Contact = () => {
                         Near City One Mall, Pimpri Colony
                       </p>
                     </div>
-                    <a
-                      href="https://maps.google.com/?q=Renuka+Avenue+Karnika+Polyclinic+Pimpri+Chinchwad"
+                    <Link
+                      to="https://maps.google.com/?q=Renuka+Avenue+Karnika+Polyclinic+Pimpri+Chinchwad"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-[#1f4a50] text-white px-4 py-2 rounded-lg hover:bg-[#2a5a65] transition-colors flex items-center space-x-2"
                     >
                       <i className="ri-direction-line"></i>
                       <span>Get Directions</span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -155,86 +155,7 @@ const Contact = () => {
       {/* Main Contact Form */}
       <GetInTouch />
 
-      {/* Additional Information */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {/* Transportation */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-[#1f4a50] mb-6 flex items-center">
-                <i className="ri-car-line text-3xl mr-3"></i>
-                How to Reach Us
-              </h3>
-              <div className="space-y-4 text-gray-600">
-                <div className="flex items-start space-x-3">
-                  <i className="ri-roadster-line text-[#1f4a50] text-xl mt-1"></i>
-                  <div>
-                    <div className="font-semibold">By Car</div>
-                    <div>Ample parking available at the clinic premises</div>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <i className="ri-bus-line text-[#1f4a50] text-xl mt-1"></i>
-                  <div>
-                    <div className="font-semibold">By Public Transport</div>
-                    <div>Regular bus services to Pimpri Colony area</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Appointment Guidelines */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-[#1f4a50] mb-6 flex items-center">
-                <i className="ri-calendar-check-line text-3xl mr-3"></i>
-                Appointment Guidelines
-              </h3>
-              <div className="space-y-4 text-gray-600">
-                <div className="flex items-start space-x-3">
-                  <i className="ri-time-line text-[#1f4a50] text-xl mt-1"></i>
-                  <div>
-                    <div className="font-semibold">Advance Booking</div>
-                    <div>Book appointments 24-48 hours in advance</div>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <i className="ri-alarm-line text-[#1f4a50] text-xl mt-1"></i>
-                  <div>
-                    <div className="font-semibold">Arrival Time</div>
-                    <div>Please arrive 15 minutes before appointment</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Patient Safety */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-[#1f4a50] mb-6 flex items-center">
-                <i className="ri-shield-cross-line text-3xl mr-3"></i>
-                Patient Safety & Hygiene
-              </h3>
-              <div className="space-y-4 text-gray-600">
-                <div className="flex items-start space-x-3">
-                  <i className="ri-hand-sanitizer-line text-[#1f4a50] text-xl mt-1"></i>
-                  <div>
-                    <div className="font-semibold">Sanitization</div>
-                    <div>Complete sanitization after each patient</div>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <i className="ri-hospital-line text-[#1f4a50] text-xl mt-1"></i>
-                  <div>
-                    <div className="font-semibold">Clean Environment</div>
-                    <div>Sterile equipment and hygienic facilities</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
     </>
   );
 };
